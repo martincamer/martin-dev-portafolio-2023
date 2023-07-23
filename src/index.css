@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+	--font-family: 'Outfit', sans-serif;
+	--text-primary: #f2f4f7;
+	--accent-color: #97979fc4;
+	--text-secondary: #c9c8c8;
+	--dark-secondary: #56565731;
+	--text-xs: clamp(1rem, calc(1rem + 0vw), 1.2rem);
+	--text-sm: clamp(0.9rem, calc(1rem + 0.5vw), 1.1rem);
+	--text-base: clamp(1.4rem, calc(1rem + 1vw), 1.8rem);
+	--text-lg: clamp(1.6rem, calc(1rem + 1.5vw), 2.2rem);
+	--text-xl: clamp(1.8rem, calc(1rem + 2vw), 2.6rem);
+	--text-2xl: clamp(2rem, calc(1rem + 2.5vw), 3rem);
+	--text-3xl: clamp(2.5rem, calc(1rem + 12.5vw), 3.2rem);
+}

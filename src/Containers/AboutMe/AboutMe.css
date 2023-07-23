@@ -1,0 +1,142 @@
+.aboutme-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+}
+
+.aboutme-content {
+	margin-top: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+}
+
+.aboutme-content > img {
+	width: 16rem;
+	border-radius: 50%;
+}
+
+.aboutme-info {
+	width: 100%;
+}
+
+.aboutme-info span {
+	color: var(--accent-color);
+}
+
+.aboutme-info > h1 {
+	margin-bottom: 0;
+	font-size: var(--text-2xl);
+	line-height: 4rem;
+	font-weight: 600;
+}
+
+.aboutme-title {
+	font-size: var(--text-sm);
+	margin-top: 0.7rem;
+	font-weight: normal;
+}
+
+.social-links {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 1.4rem;
+}
+
+.social-links a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	text-decoration: none;
+}
+
+.social-links i {
+	font-size: var(--text-base);
+	color: var(--text-secondary);
+	transition: all 0.2s ease-in-out;
+}
+
+.social-links i:hover {
+	color: whitesmoke;
+}
+
+.btn {
+	background-color: var(--accent-color);
+	color: var(--bgcolor);
+	border: none;
+	border-radius: 7px;
+	width: 100%;
+	padding-block: 0.8rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	font-weight: 600;
+}
+
+.btn:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	opacity: 0.85;
+}
+
+.btn-secondary {
+	background-color: var(--dark-secondary);
+	color: var(--text-secondary);
+}
+
+.aboutme-buttons {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.aboutme-buttons a {
+	text-decoration: none;
+	color: var(--bgcolor);
+	text-align: center;
+}
+
+.aboutme-title {
+	color: var(--text-primary);
+}
+
+@media screen and (max-width: 768px) {
+	.aboutme-content {
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	.aboutme-buttons {
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.aboutme-info {
+		margin-top: -2rem;
+	}
+
+	.aboutme-description {
+		text-align: left;
+	}
+
+	.aboutme-info > h1 {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.aboutme-content {
+		flex-direction: column;
+	}
+	.btn {
+		width: 100%;
+	}
+
+	.aboutme-buttons a {
+		width: 100%;
+	}
+}
